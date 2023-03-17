@@ -25,7 +25,7 @@ double calcItem(double x, uint16_t n) {
 
 double expn(double x, uint16_t count) {
   double s = 1.0;
-  for (int i = 1; i < count; i++) {
+  for (int i = 1; i <= count; i++) {
     s += calcItem(x, i);
   }
   return s;
