@@ -24,27 +24,27 @@ double calcItem(double x, uint16_t n) {
 }
 
 double expn(double x, uint16_t count) {
-  double s = 1.0;
+  double sum = 1.0;
   for (int i = 1; i <= count; i++) {
-    s += calcItem(x, i);
+    sum += calcItem(x, i);
   }
-  return s;
+  return sum;
 }
 
 double sinn(double x, uint16_t count) {
-  double s = 0.0;
+  double sum = 0.0;
   while (count > 0) {
-    s += pown(-1, count - 1) * calcItem(x, 2 * count - 1);
+    sum += pown(-1, count - 1) * calcItem(x, 2 * count - 1);
     --count;
   }
-  return s;
+  return sum;
 }
 
 double cosn(double x, uint16_t count) {
-  double s = 0.0;
+  double sum = 0.0;
   while (count > 0) {
-    s += pown(-1, count - 1) * calcItem(x, 2 * count - 2);
+    sum += pown(-1, count - 1) * calcItem(x, 2 * count - 2);
     --count;
   }
-  return s;
+  return sum;
 }
