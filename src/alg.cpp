@@ -5,7 +5,7 @@
 
 double pown(double value, uint16_t n) {
   double s = 1.0;
-  for(int i = 0; i <= n; i++){
+  for(int i = 0; i < n; i++){
     s *=velue;
   }
   return s;
